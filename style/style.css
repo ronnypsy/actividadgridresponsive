@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(214, 212, 212);
+    color: rgb(0, 0, 0);
+    display: grid;
+    min-height: 100vh;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100px;  
+}  
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation ul {
+    font-size: 100%;
+    margin: auto;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 30px 10px;
+            transition: all 0.5s linear;
+            border-radius: 3px;
+            text-decoration: none;
+            color: black;
+        }
+            .navigation ul li a:hover {
+                background: #da2b2b4b ;
+            }
+
+
+.container {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 90%;
+    max-width: 1fr 1fr 1fr;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:"header header header"
+                        "contenido contenido barra"
+                        "widget widget barra"
+                        "footer footer footer";
+}
+
+    .container > div,
+    .container .header,
+    .container .contenido,
+    .container .barra,
+    .container .footer {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+        .container .header {
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            grid-area: header;
+        }
+
+            .container .contenido {
+                grid-area: contenido;
+            }
+
+                .container .barra {
+                    grid-column:  3/4;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    grid-area: barra;
+                }
+        
+                    .container .widget {
+                        background: rgb(255, 255, 255);
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                        .container .widget {
+                            grid-area: widget;
+                        }
+
+                            .container .footer {
+                                background: rgb(247, 247, 247);
+                                color: rgb(0, 0, 0);
+                                grid-area: footer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center; 
+                            }
+
+                                .container-templos .kioto {
+                                    display: block;
+                                    margin: 0px auto;
+                                    width: 400px;
+                                    padding: 40px;
+                                    border-radius: 100px;
+                                }
+                            
+                                .container-templos .nagano {
+                                    display: block;
+                                    margin: 0px auto;
+                                    width: 400px;
+                                    padding: 40px;
+                                    border-radius: 100px;
+                                }
+.navigation ul {
+        flex-direction: column;
+    }
+
+    .logo-img  {
+       display: flex;
+    }
+
+.inicio {
+    display: grid;
+    grid-gap: 20px;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+    .inicio .ini-img {
+        margin: 0px auto;
+        width: 250px;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    
+.visita_japon {
+    display: grid;
+    grid-gap: 20px;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+p   { 
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+h1 {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+h2 {
+    justify-content: center;
+    justify-items: center;
+}
+
+.container-templos .kioto {
+    display: block;
+    margin: 0px auto;
+    width: 400px;
+    padding: 40px;
+    border-radius: 100px; 
+}
+
+    .container-templos .nagano {
+        display: block;
+        margin: 0px auto;
+        width: 400px;
+        padding: 40px;
+        border-radius: 100px;
+    }
+
+.container-ciudades .kioto {
+    display: block;
+    margin: 0px auto;
+    width: 400px;
+    padding: 40px;
+    border-radius: 100px;
+}
+    
+    .container-ciudades .osaka {
+        display: block;
+        margin: 0px auto;
+        width: 400px;
+        padding: 40px;
+        border-radius: 100px;
+    }
+
+        .container-ciudades .nagoya {
+            display: block;
+            margin: 0px auto;
+            width: 400px;
+            padding: 40px;
+            border-radius: 100px;
+        }
+
+.form {
+    background-color: #fff;
+    display: grid;
+    grid-gap: 20px;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    text-align: justify;
+    }
+
+    .form_titulo {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        display: grid;
+    }            
+        .form_container {
+            margin-top: 20px;
+            display: grid;
+            gap: 20px;
+            text-align: center;
+        }
+ 
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas:"header header header"
+                            "contenido contenido contenido"
+                            "barra barra barra"
+                            "widget widget widget"
+                            "footer footer footer"
+    }
+
+.container-templos .kioto {
+    display: grid;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 60%;
+}
+
+    .container-templos .nagano {
+        display: grid;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 60%;
+    }
+
+.container-ciudades .kioto {
+    display: grid;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 60%;
+    }
+        
+    .container-ciudades .osaka {
+        display: grid;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 60%;
+    } 
+
+    .container-ciudades .nagoya {
+            display: grid;
+            margin: 0px auto;
+            width: 100%;
+            max-width: 60%;    
+        }
+
+.inicio .ini-img {
+    display: grid;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 60%;   
+}
+
+.logo-img  {
+    display: none;
+}
+
+.navigation ul li {
+        display: block;
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 30px 0px;
+        transition: all 0.5s linear;
+        border-radius: 3px;
+        text-decoration: none;
+        color: black;
+    }
+    
+        .navigation ul li a:hover {
+            background: #da2b2b4b ;
+        }
+
+}
